@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Random Video Player</title>
+    <script type="text/javascript">
+      import('./scripts/player.js')
+      .then(m => {
+        const videoplayer1 = new m.VideoPlayer( '#video1', './videos.json' );
+      });
+    </script>
+  </head>
+  <body>
+    <div class="videoHolder">
+      <iframe id="video1" width="800" height="600" allow='autoplay'></iframe>
+    </div>
+  </body>
+</html>
